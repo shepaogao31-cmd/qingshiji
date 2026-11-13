@@ -1,11 +1,30 @@
-# 轻食计 · AI 健康饮食助手
+<p align="center">
+  <img src="docs/brand/logo-horizontal.svg" alt="轻食计 · AI 健康饮食助手" width="620" />
+</p>
 
-> 每一口，都算数。
+<p align="center">
+  <strong>每一口，都算数</strong><br />
+  一个 AI 驱动的个人健康与饮食管理网页应用<br />
+  <sub>BMI / 体脂率 / BMR / TDEE · 饮食记录 · AI 拍照识别 · AI 饮食推荐 · MET 运动消耗 · 训练计划</sub>
+</p>
 
-一个 AI 驱动的个人健康与饮食管理网页应用。围绕「算得准、吃得明白、练得科学」设计，帮助用户管理体重、记录饮食、追踪运动，并获得 AI 饮食与训练建议。
+<p align="center">
+  <a href="https://4kpfkq7xujwwt.doubaoapps.com/app/app_17e5mtw4dg4"><strong>▸ 在线体验</strong></a>
+  &nbsp;·&nbsp;
+  <a href="LICENSE">MIT License</a>
+  &nbsp;·&nbsp;
+  <span>React 19 + TypeScript + Vite</span>
+</p>
 
-- **在线体验（妙搭托管版）**：https://4kpfkq7xujwwt.doubaoapps.com/app/app_17e5mtw4dg4
-- **开源版本**：本仓库，可直接克隆到本地运行、二次开发
+---
+
+## 界面预览
+
+<p align="center">
+  <img src="docs/shots/ui-preview.svg" alt="轻食计界面预览：首页 / 饮食记录 / 训练计划" width="100%" />
+</p>
+
+> 上图为界面示意（矢量重绘）：布局、配色、文案取自实际运行界面，其中饮食记录里的食物为示例数据。
 
 ## 功能
 
@@ -96,11 +115,28 @@ shared/
 ├── static/                       # 需鉴权的静态资源目录（当前为空）
 └── plugin-types.ts               # 插件类型定义
 
+docs/
+├── brand/                        # logo-mark.svg（图形标）/ logo-horizontal.svg（横版组合）
+└── shots/ui-preview.svg          # 界面预览图
+
 scripts/
 ├── dev.mjs                       # 开发服务器启动器（含日志与端口清理）
 ├── build.sh                      # 平台交付打包脚本（需 bash）
 └── setup-git-hooks.mjs           # 本地 git hook 安装
 ```
+
+## 品牌资产
+
+`docs/brand/` 下是矢量源文件，可直接用 Illustrator / Figma / Inkscape 打开编辑：
+
+| 文件 | 用途 |
+| --- | --- |
+| `logo-mark.svg` | 图形标（512×512），用于应用图标、favicon、头像 |
+| `logo-horizontal.svg` | 横版组合（1200×360），图形标 + 中文字标 + 标语，用于 README / 官网 / 宣传图 |
+
+配色：主绿 `#22C55E`，深绿 `#15803D`，浅绿高光 `#6EE7A0`，文本 `#0F172A`，辅助文本 `#64748B`。
+
+> 图形语义：绿色圆盘 = 餐盘，扇区虚线环 = 刻度 / 计量（呼应「每一口，都算数」），中心绿叶 = 轻食与自然。
 
 ## 数据存储
 
