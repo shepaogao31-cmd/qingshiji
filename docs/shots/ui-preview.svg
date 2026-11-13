@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="580" viewBox="0 0 1240 580" role="img" aria-label="轻食计界面预览">
+  <rect width="1240" height="580" fill="#F1F5F9"/>
+  <g font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">
+
+    <!-- 屏 1 首页 -->
+    <rect x="30" y="30" width="380" height="520" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <circle cx="220" cy="118" r="34" fill="#22C55E"/>
+    <path d="M220 96 C 240 106 244 126 232 142 C 216 138 210 116 220 96 Z" fill="#FFFFFF"/>
+    <text x="220" y="188" text-anchor="middle" font-size="19" font-weight="700" fill="#0F172A">轻食计</text>
+    <text x="220" y="256" text-anchor="middle" font-size="25" font-weight="700" fill="#0F172A">开始你的健康之旅</text>
+    <text x="220" y="292" text-anchor="middle" font-size="13" fill="#64748B">先填写身体数据，我们将为你计算体脂率、</text>
+    <text x="220" y="314" text-anchor="middle" font-size="13" fill="#64748B">基础代谢，并定制专属方案</text>
+    <rect x="130" y="342" width="180" height="44" rx="10" fill="#1677FF"/>
+    <text x="220" y="370" text-anchor="middle" font-size="15" fill="#FFFFFF">填写身体数据</text>
+    <line x1="30" y1="470" x2="410" y2="470" stroke="#F1F5F9" stroke-width="2"/>
+    <text x="100" y="508" text-anchor="middle" font-size="14" font-weight="700" fill="#1677FF">首页</text>
+    <text x="220" y="508" text-anchor="middle" font-size="14" fill="#94A3B8">饮食</text>
+    <text x="340" y="508" text-anchor="middle" font-size="14" fill="#94A3B8">运动</text>
+
+    <!-- 屏 2 饮食 -->
+    <rect x="430" y="30" width="380" height="520" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="458" y="84" font-size="19" font-weight="700" fill="#0F172A">饮食记录</text>
+    <rect x="450" y="100" width="340" height="46" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="620" y="120" text-anchor="middle" font-size="13" fill="#0F172A">2026-11-13</text>
+    <text x="620" y="138" text-anchor="middle" font-size="11" fill="#94A3B8">今天</text>
+    <rect x="450" y="158" width="340" height="132" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="470" y="188" font-size="14" font-weight="700" fill="#0F172A">当日摄入</text>
+    <text x="770" y="188" text-anchor="end" font-size="13" fill="#1677FF">3200 / 2000 kcal</text>
+    <text x="470" y="216" font-size="13" fill="#334155">蛋白质</text>
+    <text x="770" y="216" text-anchor="end" font-size="13" fill="#64748B">120g / 100g</text>
+    <text x="470" y="244" font-size="13" fill="#334155">碳水化合物</text>
+    <text x="770" y="244" text-anchor="end" font-size="13" fill="#64748B">380g / 200g</text>
+    <text x="470" y="272" font-size="13" fill="#334155">脂肪</text>
+    <text x="770" y="272" text-anchor="end" font-size="13" fill="#64748B">70g / 60g</text>
+    <rect x="450" y="302" width="340" height="82" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="470" y="330" font-size="14" font-weight="700" fill="#0F172A">早餐</text>
+    <text x="770" y="330" text-anchor="end" font-size="12" fill="#94A3B8">560 kcal</text>
+    <text x="470" y="358" font-size="12" fill="#64748B">燕麦牛奶 + 2 个鸡蛋</text>
+    <text x="770" y="358" text-anchor="end" font-size="12" fill="#1677FF">+ 添加</text>
+    <rect x="450" y="394" width="340" height="82" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="470" y="422" font-size="14" font-weight="700" fill="#0F172A">午餐</text>
+    <text x="770" y="422" text-anchor="end" font-size="12" fill="#94A3B8">780 kcal</text>
+    <text x="470" y="450" font-size="12" fill="#64748B">香煎鸡胸肉饭 + 西兰花</text>
+    <text x="770" y="450" text-anchor="end" font-size="12" fill="#1677FF">+ 添加</text>
+    <rect x="450" y="490" width="340" height="42" rx="10" fill="#1677FF"/>
+    <text x="620" y="517" text-anchor="middle" font-size="15" fill="#FFFFFF">+ 添加食物</text>
+
+    <!-- 屏 3 训练 -->
+    <rect x="830" y="30" width="380" height="520" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="858" y="84" font-size="19" font-weight="700" fill="#0F172A">训练计划</text>
+    <rect x="850" y="100" width="340" height="40" rx="8" fill="#F1F5F9" stroke="#E5E7EB" stroke-width="2"/>
+    <rect x="852" y="102" width="167" height="36" rx="7" fill="#FFFFFF"/>
+    <text x="936" y="125" text-anchor="middle" font-size="13" fill="#0F172A">居家无器械</text>
+    <text x="1104" y="125" text-anchor="middle" font-size="13" fill="#64748B">健身房器械</text>
+    <rect x="850" y="152" width="340" height="76" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="2"/>
+    <text x="868" y="180" font-size="13" font-weight="700" fill="#1D4ED8">AI 生成专属计划</text>
+    <text x="868" y="202" font-size="12" fill="#3B82F6">根据身体数据和目标，定制个性化方案</text>
+    <rect x="1094" y="170" width="80" height="36" rx="8" fill="#1677FF"/>
+    <text x="1134" y="193" text-anchor="middle" font-size="13" fill="#FFFFFF">生成</text>
+    <text x="850" y="258" font-size="13" fill="#64748B">推荐训练计划</text>
+    <rect x="850" y="270" width="340" height="52" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="868" y="302" font-size="14" fill="#0F172A">第 1 天 · 全身基础</text>
+    <text x="1050" y="302" font-size="12" fill="#94A3B8">30 分钟</text>
+    <rect x="850" y="332" width="340" height="52" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="868" y="364" font-size="14" fill="#0F172A">第 2 天 · 上肢 + 核心</text>
+    <text x="1050" y="364" font-size="12" fill="#94A3B8">25 分钟</text>
+    <rect x="850" y="394" width="340" height="52" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="868" y="426" font-size="14" fill="#0F172A">第 3 天 · 下肢 + 有氧</text>
+    <text x="1050" y="426" font-size="12" fill="#94A3B8">35 分钟</text>
+    <text x="850" y="482" font-size="13" fill="#64748B">常见动作库</text>
+    <rect x="850" y="494" width="340" height="40" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="868" y="520" font-size="13" fill="#0F172A">俯卧撑 · 胸 / 三头肌</text>
+    <text x="1172" y="520" text-anchor="end" font-size="11" fill="#94A3B8">通用</text>
+  </g>
+</svg>

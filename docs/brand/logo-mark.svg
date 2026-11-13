@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="轻食计 logo">
+  <defs>
+    <radialGradient id="disc" cx="34%" cy="28%" r="80%">
+      <stop offset="0" stop-color="#6EE7A0"/>
+      <stop offset=".5" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#15803D"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C7F5D8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="188" fill="url(#disc)"/>
+  <circle cx="256" cy="256" r="168" fill="none" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="5" stroke-dasharray="16 26"/>
+  <circle cx="256" cy="256" r="132" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="3"/>
+  <path d="M256 150 C 320 186 336 262 284 318 C 236 300 222 224 256 150 Z" fill="url(#leaf)"/>
+  <path d="M258 168 C 264 220 266 262 272 300" fill="none" stroke="#15803D" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/>
+</svg>

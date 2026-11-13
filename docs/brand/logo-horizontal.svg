@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="轻食计 logo 横版">
+  <defs>
+    <radialGradient id="disc2" cx="34%" cy="28%" r="80%">
+      <stop offset="0" stop-color="#6EE7A0"/>
+      <stop offset=".5" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#15803D"/>
+    </radialGradient>
+    <linearGradient id="leaf2" x1="0" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C7F5D8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" fill="#FFFFFF"/>
+  <g transform="translate(96,28) scale(0.594)">
+    <circle cx="256" cy="256" r="188" fill="url(#disc2)"/>
+    <circle cx="256" cy="256" r="168" fill="none" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="5" stroke-dasharray="16 26"/>
+    <path d="M256 150 C 320 186 336 262 284 318 C 236 300 222 224 256 150 Z" fill="url(#leaf2)"/>
+    <path d="M258 168 C 264 220 266 262 272 300" fill="none" stroke="#15803D" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <line x1="470" y1="118" x2="470" y2="242" stroke="#E2E8F0" stroke-width="3"/>
+  <text x="520" y="188" font-size="92" font-weight="700" fill="#0F172A" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">轻食计</text>
+  <text x="524" y="242" font-size="30" fill="#64748B" letter-spacing="3" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">每一口，都算数</text>
+</svg>
