@@ -33,7 +33,7 @@ function log(msg) {
   try { process.stdout.write(line); } catch {}
 }
 
-/** 清理端口占用：lsof -ti:<port> | kill -9 */
+/** 清理端口占用：lsof -ti:<port> | kill -9（Windows 无 lsof，失败时静默跳过） */
 function killOrphansByPort(port) {
   try {
     const out = execSync(`lsof -ti:${port}`, { stdio: ['ignore', 'pipe', 'ignore'] })
@@ -87,10 +87,13 @@ function startProcess({ name, command, args, logFileName }) {
 
 killOrphansByPort(CLIENT_DEV_PORT);
 
+// 用当前 node 直接跑 vite 的入口文件：
+// Windows 上 npx 是 .cmd 脚本，child_process.spawn 无法直接拉起（ENOENT/EINVAL），
+// 直接用 process.execPath 调 node 可跳平台。
 startProcess({
   name: 'client',
-  command: 'npx',
-  args: ['vite', '--port', CLIENT_DEV_PORT, '--host', '0.0.0.0'],
+  command: process.execPath,
+  args: [path.join(ROOT, 'node_modules', 'vite', 'bin', 'vite.js'), '--port', CLIENT_DEV_PORT, '--host', '0.0.0.0'],
   logFileName: 'client.std.log',
 });
 
