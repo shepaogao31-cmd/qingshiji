@@ -1,0 +1,36 @@
+{
+  "id": "food_image_recognition_1",
+  "pluginKey": "@official-plugins/ai-image-understanding",
+  "pluginVersion": "1.0.22",
+  "name": "食物图像识别",
+  "description": "识别图片中的食物种类和大致份量，用于饮食记录拍照添加食物功能",
+  "icon": "",
+  "paramsSchema": {
+    "type": "object",
+    "properties": {
+      "food_image": {
+        "type": "array",
+        "format": "plugin-image-url",
+        "description": "用户拍摄/上传的食物图片",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "food_image"
+    ]
+  },
+  "formValue": {
+    "images": "{{input.food_image}}",
+    "modelID": "2015",
+    "modelParams": {
+      "maxTokens": 8192,
+      "temperature": 0.5
+    },
+    "prompt": "你是一位专业的饮食营养识别专家，擅长准确识别图片中的食物信息。\n\n请识别以下图片中的食物内容：\n\n识别要求：\n1. 食物种类：列出图片中所有可识别的食物名称，每种食物单独标注\n2. 大致份量：对每种食物估算常见的重量/份量单位（如：1个、100克、1碗等）\n3. 如图片中包含多种食物，分别列出每种的信息\n4. 对于无法明确识别的食物标注为“未识别食物”\n\n输出要求：\n- 信息准确，避免误判\n- 格式清晰，每种食物占一行\n- 无需额外解释，仅输出识别结果"
+  },
+  "createdAt": 1789465564322,
+  "updatedAt": 1789465564322,
+  "createdBy": 7585563927468051650
+}

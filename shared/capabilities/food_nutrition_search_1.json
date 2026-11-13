@@ -1,0 +1,27 @@
+{
+  "id": "food_nutrition_search_1",
+  "pluginKey": "@official-plugins/ai-search-summary",
+  "pluginVersion": "1.0.13",
+  "name": "食物营养数据搜索",
+  "description": "通过AI联网搜索食物的热量及三大营养素（碳水化合物、蛋白质、脂肪）数据，用于补充食物库中未收录的食物信息，支撑饮食记录页的联网搜索添加食物功能。",
+  "icon": "",
+  "paramsSchema": {
+    "type": "object",
+    "properties": {
+      "food_name": {
+        "type": "string",
+        "description": "需要搜索营养数据的食物名称"
+      }
+    },
+    "required": [
+      "food_name"
+    ]
+  },
+  "formValue": {
+    "query": "{{input.food_name}} 热量 碳水化合物 蛋白质 脂肪 营养成分 每100克含量",
+    "instruction": "请从搜索结果中提取该食物每100克可食用部分的营养数据，包含：热量（单位：千卡）、碳水化合物含量（单位：克）、蛋白质含量（单位：克）、脂肪含量（单位：克）。如果有多个不同来源的数据，取平均值或最常见的数值。如果搜索结果中没有明确的每100克含量数据，请明确说明未找到相关数据。输出格式为JSON，包含calorie、carbohydrate、protein、fat四个字段，数值保留1位小数，未找到的字段填null。"
+  },
+  "createdAt": 1789465553331,
+  "updatedAt": 1789465553331,
+  "createdBy": 7585563927468051650
+}

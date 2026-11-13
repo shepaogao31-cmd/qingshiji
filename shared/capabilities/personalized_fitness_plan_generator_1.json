@@ -1,0 +1,46 @@
+{
+  "id": "personalized_fitness_plan_generator_1",
+  "pluginKey": "@official-plugins/ai-text-generate",
+  "pluginVersion": "1.0.21",
+  "name": "个性化健身计划生成",
+  "description": "根据用户身体数据、健身目标、训练场景和经验水平，流式生成个性化饮食建议和训练计划文本，用于训练计划页和首页展示。",
+  "icon": "",
+  "paramsSchema": {
+    "properties": {
+      "body_data": {
+        "type": "string",
+        "description": "用户身体数据，包含身高、体重、年龄、性别、体脂率等相关信息"
+      },
+      "fitness_goal": {
+        "type": "string",
+        "description": "用户健身目标，可选值：增肌、减脂"
+      },
+      "training_scenario": {
+        "type": "string",
+        "description": "训练场景，如：健身房、居家、户外等"
+      },
+      "training_experience": {
+        "description": "用户训练经验水平，如：新手、初级、中级、高级等",
+        "type": "string"
+      }
+    },
+    "required": [
+      "body_data",
+      "fitness_goal",
+      "training_scenario",
+      "training_experience"
+    ],
+    "type": "object"
+  },
+  "formValue": {
+    "modelID": "2015",
+    "modelParams": {
+      "maxTokens": 8192,
+      "temperature": 0.5
+    },
+    "prompt": "你是一位专业的健身教练和营养顾问，拥有丰富的健身指导经验和专业的营养学知识。\n\n请根据以下用户信息，生成个性化的健身计划和饮食建议：\n\n用户身体数据：{{input.body_data}}\n健身目标：{{input.fitness_goal}}\n训练场景：{{input.training_scenario}}\n训练经验：{{input.training_experience}}\n\n生成内容要求：\n\n【训练计划部分】\n1. 周训练频率安排：根据用户目标和经验，给出每周训练天数和休息天数建议\n2. 每日训练内容：针对不同训练日设计具体的训练动作、组数、次数、组间休息时间\n3. 动作说明：对核心动作给出简要的动作要领和注意事项\n4. 进阶建议：根据用户经验水平，给出后续进阶的训练方向\n\n【饮食建议部分】\n1. 每日热量摄入估算：根据用户身体数据和目标，计算每日推荐摄入的总热量\n2. 宏量营养素分配：给出蛋白质、碳水化合物、脂肪的摄入比例和具体克数建议\n3. 饮食结构建议：推荐适合的食物种类和份量，给出一日三餐的参考搭配示例\n4. 饮食注意事项：针对用户目标给出特别的饮食禁忌和小贴士\n\n输出要求：\n- 内容专业、科学、可落地，符合健身行业通用标准\n- 语言通俗易懂，避免过于专业的术语，方便用户理解和执行\n- 结构清晰，分点明确，便于页面展示\n- 整体字数控制在1500-2000字左右\n- 不要出现任何 markdown 格式，使用纯文本输出"
+  },
+  "createdAt": 1789465560670,
+  "updatedAt": 1789465560670,
+  "createdBy": 7585563927468051650
+}
